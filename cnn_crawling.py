@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 # Month=datetime.today().month
 # Day=datetime.today().day
 
-Year = 2022
+Year = 22
 Month = 11
 Day = 3
 
@@ -20,7 +20,7 @@ Day=Day.zfill(2)
 url='http://transcripts.cnn.com/TRANSCRIPTS/{}/{}/sn.01.html'.format(Year+Month,Day)
 
 resp=requests.get(url)
-soup=BeautifulSoup(resp.text)
+soup=BeautifulSoup(resp.text, 'lxml')
 print('Request code is {}'.format(resp.status_code))
 
 container=soup.find('div', style='padding-left:10px;').find_all('p',class_='cnnBodyText')
