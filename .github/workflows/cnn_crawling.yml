@@ -42,7 +42,7 @@ jobs:
       run: |
         git config --global user.email 'jeongbg91@gmail.com'
         git config --global user.name 'JeongBG'
-        git add CNN_scripts.txt.txt
+        git add CNN_scripts.txt
         git commit -m 'CNN_script 수집'
         
     - name: push
