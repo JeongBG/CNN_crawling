@@ -4,13 +4,13 @@
 name: CNN_crawling
 
 on:
-#   schedule:
-#     - cron: 0 12 * * 1,2,3,4,5
+  schedule:
+    - cron: 30 11 * * 1,2,3,4,5
   
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
 
 jobs:
   build:
