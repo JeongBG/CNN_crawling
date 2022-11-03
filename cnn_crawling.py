@@ -1,9 +1,10 @@
 import requests
+from datetime import datetime
 from bs4 import BeautifulSoup
 
-Year=22
-Month=11
-Day=3
+Year=datetime.today().year
+Month=datetime.today().month
+Day=datetime.today().day
 
 Year=str(Year)
 Month=str(Month)
