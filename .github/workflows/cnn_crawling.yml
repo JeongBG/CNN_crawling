@@ -6,7 +6,7 @@ name: CNN_crawling
 # 어떤 조건일때 파일을 실행시킬지 결정
 on:
   schedule:
-    - cron: 30 11 * * 1,2,3,4,5
+    - cron: 30 16 * * 1,2,3,4,5
   
 #   push:
 #     branches: [ "main" ]
